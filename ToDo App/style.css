@@ -1,0 +1,8 @@
+body {
+    background: linear-gradient(135deg, #43cea2, #185a9d);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.todoCard {
+    width: 400px;
+}
