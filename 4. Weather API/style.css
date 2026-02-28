@@ -1,0 +1,15 @@
+body {
+    background: url('weather.jpg');
+    background-size: cover;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.weatherCard {
+    width: 400px;
+    background-color: rgba(255,255,255,0.2);
+    backdrop-filter: blur(8px);
+}
+
+img {
+    width: 100px;
+}
