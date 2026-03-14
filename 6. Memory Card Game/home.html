@@ -8,6 +8,48 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
+
+    <div class="container text-center my-4">
+        <h1 class="title">🧠 Memory Card Game</h1>
+        <div class="lead">Flip the cards and find all matching pairs!</div>
+
+        <!-- scoreboard -->
+
+        <div class="d-flex justify-content-center gap-4 my-3 scoreboard">
+            <div class="statBox">
+                <span class="statLabel">Moves</span>
+                <span id="moveCount" class="statValue">0</span>
+            </div>
+
+            <div class="statBox">
+                <span class="statLabel">Pairs Found</span>
+                <span id="pairsFound" class="statValue">0</span>
+            </div>
+
+            <div class="statBox">
+                <span class="statLabel">Time</span>
+                <span id="timer" class="statValue">00:00</span>
+            </div>
+        </div>
+
+        <button class="btn btn-warning btn-lg mb-3" id="restartBtn">🔁 Restart Game</button>
+    </div>
+
+    <!-- gameboard -->
+
+    <div class="container">
+        <div id="gameBoard" class="gameBoard"></div>
+    </div>
+
+    <!-- win modal -->
+    <div id="winModal" class="modalOverlay hidden">
+        <div class="modal-content">
+            <h2>🎉 You Won!</h2>
+            <p>You completed the game in <strong id="finalMoves">0</strong> moves</p>
+            <p>Your time <strong id="finalTime">00:00</strong></p>
+            <button id="playAgain" class="btn btn-success btn-lg">Play Again</button>
+        </div>
+    </div>
     
     <script src="main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
